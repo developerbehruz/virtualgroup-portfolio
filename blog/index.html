@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/image/brand.png">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    <!-- Md Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Jivo chat -->
+    <!-- <script src="https://widget.replain.cc/dist/client.js"></script> -->
+    <title>Virtual Group</title>
+    <script>
+        window.replainSettings = { id: '61bb086f-7563-4231-9764-d3d0631248d6' };
+        (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+        })('https://widget.replain.cc/dist/client.js');
+    </script>
+</head>
+<body>
+    <div class="area" >
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <main>
+        <nav class="navbar navbar-expand-lg fixed-top animate__animated">
+            <div class="container justify-content-between">
+            <div class="d-flex animate__animated animate__bounceInDown">
+                <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="../">
+                <img src="../assets/image/brand.png" alt="Logo" loading="lazy" style="margin-top: 2px;"/>
+                </a>
+            </div>
+            <div class="navigation animate__animated animate__bounceInDown">
+                <ul class="navbar-nav flex-row d-md-flex">       
+                    <li class="nav-item me-3 me-lg-3">
+                    <a class="nav-link" href="../company/">
+                        <span>Kompaniya</i></span>
+                    </a>
+                    </li>
+            
+                    <li class="nav-item me-3 me-lg-3">
+                    <a class="nav-link" href="../services/">
+                        <span>Xizmatlar</span>
+                    </a>
+                    </li>
+            
+                    <li class="nav-item me-3 me-lg-3">
+                    <a class="nav-link" href="../portfolio/">
+                        <span>Portfolio</span>
+                    </a>
+                    </li>
+
+                    <li class="nav-item me-3 me-lg-3">
+                    <a class="nav-link" href="../vacancy/">
+                        <span>Vakansiya</span>
+                    </a>
+                    </li>
+
+                    <li class="nav-item me-3 me-lg-3">
+                    <a class="nav-link" href="../blog/">
+                        <span>Blog</span>
+                    </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-3">
+                      <a class="nav-link" href="../contact/">
+                          <span class="tnl" data="Bog'lanish">Bog'lanish</span>
+                      </a>
+                    </li>
+                    <a class="nav-link" href="#">
+                    <button
+                    data="Tilni tanlash"
+                    class="tnl btn langBtn langNav py-3 px-4 mt-2"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#collapseWidthExample"
+                    aria-expanded="false"
+                    aria-controls="collapseWidthExample"
+                    >
+                    Tilni tanlash
+                    <i class="fa-solid fa-language"></i>
+                    </button>
+                    </a>
+                </ul>
+            </div>
+                <p class="flex-row d-none d-md-flex langP animate__animated animate__bounceInDown">
+                <button
+                class="tnl btn langBtn py-3 px-4 mt-2" data="Tilni tanlash"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#collapseWidthExample"
+                aria-expanded="false"
+                aria-controls="collapseWidthExample"
+                >
+                Tilni tanlash
+                <i class="fa-solid fa-language"></i>
+                </button>
+            </p>
+              <h2 class="menuBtn text-white animate__animated animate__bounceInDown">
+                <!-- <i class="fas fa-bars menu"></i> -->
+                <i class="fas fa-align-left menu"></i>
+                <i class="fas fa-times close"></i></h2>
+            </div>
+        </nav>
+        <div style="min-height: 120px;margin-top: 100px" class="lang">
+          <div class="collapse collapse-horizontal px-4" id="collapseWidthExample"><br>
+            <button class="langItem translate btn m-1" id="uz" style="padding:8px 30px;"><i class="flag flag-uzbekistan mt-2"></i> Uzbek</button><br>
+            <button class="langItem translate btn m-1" id="eng"><i class="flag flag-united-states mt-2"></i> Engilish</button><br>
+            <button class="langItem translate btn m-1 mb-4" id="ru"><i class="flag flag-russia mt-2"></i> Russian</button><br>
+        </div>
+        </div>
+    </main>
+
+    <div class="container mt-5">
+      <div class="row"  style="margin-top: 95px;">
+        <div class="col-lg-6 mt-5">
+          <span class="title" data-aos="fade-right">BLOG</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog">
+      <div class="container" style="margin-top: 100px; margin-bottom: 40px;">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="row blogRow">
+              <div class="col-md-6">
+                <img class="img-fluid" src="../assets/image/girls.jpg" alt="sample108">
+              </div>
+              <div class="col-md-6 textBlog">
+                <h5 class="titleBlog">8-Mart Xalqaro xotin-qizlar kuni</h5>
+                <p class="description">8-Mart Xalqaro xotin-qizlar kuni bilan barcha ayol-qizlarimizni Virtual Group jamoasi chin ko'ngildan muborakbod etadi.</p>
+                <hr>
+                <div class="date">
+                  <i class="fa-solid fa-calendar-days"></i> 08.03.2022
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="row blogRow">
+              <div class="col-md-6">
+                <img class="img-fluid" src="../assets/image/brand.jpg" alt="sample108">
+              </div>
+              <div class="col-md-6 textBlog">
+                <h5 class="titleBlog">IT park rezidenti</h5>
+                <p class="description">Virtual Group 2021-yil 14-avgustda IT park rezidenti bo'di.</p>
+                <hr>
+                <div class="date">
+                  <i class="fa-solid fa-calendar-days"></i> 14.08.2021
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="row blogRow">
+              <div class="col-md-6">
+                <img class="img-fluid" src="../assets/image/tencom.jpg" alt="sample108">
+              </div>
+              <div class="col-md-6 textBlog">
+                <h5 class="titleBlog">Bizga ishonch bildirgan kompaniyalar</h5>
+                <p class="description">10+ dan ko'p kompaniyalar bizga ishonch bildirib kelmoqda. Bizga ishonch bildirganingiz uchun tashakkur 
+</p>
+                <hr>
+                <div class="date">
+                  <i class="fa-solid fa-calendar-days"></i> 06.07.2022
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="row blogRow">
+              <div class="col-md-6">
+                <img class="img-fluid" src="../assets/image/brand.jpg" alt="sample108">
+              </div>
+              <div class="col-md-6 textBlog">
+                <h5 class="titleBlog">Mahsulot cheklangan jamiyati</h5>
+                <p class="description">Virtual Group 2021-yil 8-avgustda MCHJ(Mahsuloti Cheklangan Jamiyati)ga aylandi.</p>
+                <hr>
+                <div class="date">
+                  <i class="fa-solid fa-calendar-days"></i> 08.08.2021
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="row blogRow">
+              <div class="col-md-6">
+                <img class="img-fluid" src="../assets/image/konst.jpg" alt="sample108">
+              </div>
+              <div class="col-md-6 textBlog">
+                <h5 class="titleBlog">8-Dekabr O'zbekiston Respublikasi konstitutsiyasi qabul qilingan kun</h5>
+                <p class="description">Virtual Group barchangizni 8-Dekabr O'zbekiston Respublikasi konstitutsiyasi qabul qilingan kun bilan qutlaydi.</p>
+                <hr>
+                <div class="date">
+                  <i class="fa-solid fa-calendar-days"></i> 08.12.2021
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6">
+            <div class="row blogRow">
+              <div class="col-md-6">
+                <img class="img-fluid" src="../assets/image/brand.jpg" alt="sample108">
+              </div>
+              <div class="col-md-6 textBlog">
+                <h5 class="titleBlog">Virtual Group 2021-yilning 5-avgustda o'z faoliyatini boshladi.</h5>
+                <p class="description">Biz biznes egalariga dasturiy mahsulotlarni yetkazishga yordam beramiz. Virtual Group bu - murakkab muammolarga zamonaviy yechim.</p>
+                <hr>
+                <div class="date">
+                  <i class="fa-solid fa-calendar-days"></i> 05.08.2021
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+   <div class="partners">
+        <div class="container">
+            <div class="row">
+                <h6 data="Hamkorlarimiz" style="color: #2152A1; font-weight: 700;" class="mt-5 ms-4 tnl">Hamkorlarimiz</h6>
+                <h2 data="Bizga ishonadigan kompaniyalar" class="text-white mt-2 ms-4 mb-5 tnl" style="font-weight: 800;" data-aos="fade-right">Bizga ishonadigan kompaniyalar</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2 mb-5" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2 mb-5" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2 mb-5" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2 mb-5" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2 mb-5" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+     <footer class="text-center text-lg-start text-muted">
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-black"
+      >
+        <div class="me-5 d-none d-lg-block">
+          <span class="tnl" data="Ijtimoiy tarmoqlarda biz bilan bog'laning:">Ijtimoiy tarmoqlarda biz bilan bog'laning:</span>
+        </div>
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </section>
+  
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+  
+          <div class="row mt-3">
+  
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+  
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Virtual Group
+              </h6>
+              <p class="tnl" data="Biz biznes egalariga dasturiy mahsulotlarni yetkazishga yordam beramiz. Virtual Group bu - murakkab muammolarga zamonaviy yechim.">Biz biznes egalariga dasturiy mahsulotlarni yetkazishga yordam beramiz. Virtual Group bu - murakkab muammolarga zamonaviy yechim.
+              </p>
+            </div>
+  
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 data="Mahsulotlar" class="text-uppercase fw-bold mb-4 tnl">
+                Mahsulotlar
+              </h6>
+              <p>
+                <a href="#!" data="Web-saytlar" class="text-reset tnl" id="veb-sayt">Veb-saytlar</a>
+              </p>
+              <p>
+                <a href="#!" data="Mobil ilovalar" class="text-reset tnl">Mobil ilovalar</a>
+              </p>
+              <p>
+                <a href="#!" data="Telegram bot" class="text-reset tnl">Telegram Bot</a>
+              </p>
+              <p>
+                <a href="#!" data="UI/UX" class="text-reset tnl" id="ui ux">UI/UX</a>
+              </p>
+            </div>
+  
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 data="Foydali linklar" class="text-uppercase fw-bold mb-4 tnl" >
+                Foydali linklar
+              </h6>
+              <p>
+                <a href="#!"  data="Narxlash" class="text-reset tnl">Narxlash</a>
+              </p>
+              <p>
+                <a href="#!"  data="Ta'mirlash" class="text-reset tnl">Ta'mirlash</a>
+              </p>
+              <p>
+                <a href="#!" data="Buyurtma" class="text-reset tnl">Buyurtma</a>
+              </p>
+              <p>
+                <a href="#!" data="Yordam" class="text-reset tnl">Yordam</a>
+              </p>
+            </div>
+  
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 data="Kontakt" class="text-uppercase fw-bold mb-4 tnl">
+                Kontakt
+              </h6>
+              <p><i class="fas fa-home me-3"></i> Namangan, Pop, Obod ko'chasi</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                admin@virtualgroup.uz
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 998 94 054 51 97</p>
+              <p><i class="fas fa-print me-3"></i> + 998 94 404 51 97</p>
+            </div>
+          </div>
+  
+        </div>
+      </section>
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="#">Virtual Group</a>
+      </div>
+      
+  
+    </footer>
+
+  
+<script type="text/javascript" src="../assets/app/translate.js"></script>
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<!-- MD Bootstrap JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Main JS -->
+<script src="../assets/app/main.js"></script>
+<!-- <script src="//code.jivosite.com/widget/ZNlijARxB0" async></script> -->
+<script>
+    AOS.init();
+</script>
+</body>
+</html>

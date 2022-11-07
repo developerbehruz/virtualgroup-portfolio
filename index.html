@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/image/brand.png">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <!-- Md Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.css" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Jivo chat -->
+    <!-- <script src="https://widget.replain.cc/dist/client.js"></script> -->
+    <title>Virtual Group</title>
+    <script>
+        window.replainSettings = { id: '61bb086f-7563-4231-9764-d3d0631248d6' };
+        (function(u){var s=document.createElement('script');s.async=true;s.src=u;
+        var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
+        })('https://widget.replain.cc/dist/client.js');
+    </script>
+</head>
+<body>
+    <!-- <div class="area" >
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div> -->
+    <main>
+        <nav class="navbar navbar-expand-lg fixed-top animate__animated">
+            <div class="container justify-content-between navContainer">
+            <div class="d-flex animate__animated animate__bounceInDown barndDiv">
+                <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+                <img src="./assets/image/brand.png" alt="MDB Logo" loading="lazy" style="margin-top: 4px;"/>
+                </a>
+            </div>
+            <div class="navigation animate__animated animate__bounceInDown">
+                <ul class="navbar-nav flex-row d-md-flex">       
+                    <li class="nav-item me-3 me-lg-3">
+                    <a class="nav-link" href="./company/">
+                        <span class="tnl" data="Kompaniya">Kompaniya</span>
+                    </a>
+                    </li>
+            
+                    <li class="nav-item me-3 me-lg-3">
+                    <a class="nav-link" href="./services/">
+                        <span class="tnl" data="Xizmatlar">Xizmatlar</span>
+                    </a>
+                    </li>
+            
+                    <li class="nav-item me-3 me-lg-3">
+                    <a class="nav-link" href="./portfolio/">
+                        <span class="tnl" data="Portfolio">Portfolio</span>
+                    </a>
+                    </li>
+
+                    <li class="nav-item me-3 me-lg-3">
+                    <a class="nav-link" href="./vacancy/">
+                        <span class="tnl" data="Vakansiya">Vakansiya</span>
+                    </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-3">
+                    <a class="nav-link" href="./blog/">
+                        <span class="tnl" data="Blog">Blog</span>
+                    </a>
+                    </li>
+                    <li class="nav-item me-3 me-lg-3">
+                    <a class="nav-link" href="./contact/">
+                        <span class="tnl" data="Bog'lanish">Bog'lanish</span>
+                    </a>
+                    </li>
+                    <a class="nav-link" href="#">
+                      <button
+                      data="Tilni tanlash"
+                      class="tnl btn langBtn langNav py-3 px-4 mt-2"
+                      type="button"
+                      data-mdb-toggle="collapse"
+                      data-mdb-target="#collapseWidthExample"
+                      aria-expanded="false"
+                      aria-controls="collapseWidthExample"
+                      >
+                      Tilni tanlash
+                      <i class="fa-solid fa-language"></i>
+                      </button>
+                  </a>
+                </ul>
+            </div>
+            <p class="flex-row d-none d-md-flex langP animate__animated animate__bounceInDown">
+              <button
+              data="Tilni tanlash"
+              class="btn langBtn py-3 px-4 mt-2 tnl"
+              type="button"
+              data-mdb-toggle="collapse"
+              data-mdb-target="#collapseWidthExample"
+              aria-expanded="false"
+              aria-controls="collapseWidthExample"
+              >
+              Tilni tanlash
+              <i class="fa-solid fa-language"></i>
+              </button>
+          </p>
+              <h2 class="menuBtn text-white animate__animated animate__bounceInDown">
+                <!-- <i class="fas fa-bars menu"></i> -->
+                <i class="fas fa-align-left menu"></i>
+                <i class="fas fa-times close"></i></h2>
+            </div>
+        </nav>
+        <div style="min-height: 120px;" class="lang">
+            <div class="collapse collapse-horizontal px-4" id="collapseWidthExample"><br>
+                <button class="langItem translate btn m-1" id="uz" style="padding:8px 30px;"><i class="flag flag-uzbekistan mt-2"></i> Uzbek</button><br>
+                <button class="langItem translate btn m-1" id="eng"><i class="flag flag-united-states mt-2"></i> Engilish</button><br>
+                <button class="langItem translate btn m-1 mb-4" id="ru"><i class="flag flag-russia mt-2"></i> Russian</button><br>
+            </div>
+        </div>
+
+        <section class="showcase">
+          <div class="header-div">
+         
+          </div>
+          <video src="./assets/image/back.mp4" muted loop autoplay></video>
+          <div class="overlay"></div>
+          <div class="container main-cont">
+            <div class="row">
+                <div class="col-xl-7" style="margin:auto;text-align:center">
+                    <h2 class="animate__animated animate__fadeInTopLeft tnl" data="Virtual Group bu - ulkan imkoniyatlar kaliti!">Virtual Group bu - ulkan imkoniyatlar kaliti!</h2>
+                    <p class="animate__animated animate__bounceInUp tnl" data="Biz biznes egalariga dasturiy mahsulotlarni yetkazishga yordam beramiz. Virtual Group bu - murakkab muammolarga zamonaviy yechim.">Biz biznes egalariga dasturiy mahsulotlarni yetkazishga yordam beramiz. Virtual Group bu - murakkab muammolarga zamonaviy yechim.</p>
+                    <a href="./contact/" data="Hamkorlikni boshlash" style="cursor: pointer;" class="tnl btn py-3 px-5 mt-4 animate__animated animate__rubberBand animate__bounceInUp">Hamkorlikni boshlash</a>
+                </div> 
+                <center>
+                  <a href="#about">
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <!-- <div class="content">
+                    <div class="top-left"></div>
+                    <div class="left-bot"></div>
+                    <div class="bot-right"></div>
+                    <div class="right-top"></div>
+                  </div> -->
+                </center>
+            </div>
+        </div>
+        </section>
+    </main>
+
+    <div class="about" style="margin-top: 1000px" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="lightbox-gallery">
+                        <div class="imgDiv" data-aos="fade-down"><img src="./assets/image/img2_wide.jpg" data-image-hd="./assets/image/img2_wide.jpg"></div>
+                        <div class="imgDiv" data-aos="fade-up"><img src="./assets/image/img2_wide.jpg" data-image-hd="./assets/image/img2_wide.jpg"></div>
+                    </div>
+                </div>
+                <div class="col-lg-5 aboutText mt-5 text-white">
+                    <h1 class="tnl" data="Biz haqimizda" data-aos="fade-left">Biz haqimizda</h2>
+                    <p data-aos="fade-left" data="Virtual Group 2021-yil o'z faoliyatini boshladi. Shu vaqtga qadar bir necha kompaniya va tashkilotlar o'zaro hamkorlikni yo'lga qo'ydi va ularning ishonchiga kira oladi." class="tnl">Virtual Group 2021-yil o'z faoliyatini boshladi. Shu vaqtga qadar bir necha kompaniya va tashkilotlar o'zaro hamkorlikni yo'lga qo'ydi va ularning ishonchiga kira oladi.</p>
+                    <div class="row">
+                        <div class="col-md-6" data-aos="fade-left"><i class="fa-solid fa-bolt"></i><p class="tnl" data="Tezkor yechimlar">Tezkor <br/>yechimlar </div>
+                        <div class="col-md-6" data-aos="fade-left"><i class="fa-solid fa-earth-europe"></i><p class="tnl" data="Takrorlanmas loyihalar">Takrorlanmas<br/>loyihalar</p> </div>
+                    </div>
+                    <a href="./portfolio/" data="Portfolio" class="btn py-3 px-4 mt-4 tnl" data-aos="fade-left">Portfolio <i class="fas fa-briefcase"></i></a>
+                    <a href="tel:/998940545197" data="Qo'ng'iroq" class="btn py-3 px-4 mt-4 tnl" data-aos="fade-left">Qo'ng'iroq <i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="work">
+      <div class="container mt-5">
+          <div class="row">
+              <div class="col-lg-6 mt-5">
+                  <span class="tnl title" data="PORTFOLIO" data-aos="fade-right">PORTFOLIO</span>
+              </div> 
+              <div class="col-lg-6 mt-5 btns">
+                  <a href="./portfolio/" data="Mobil ilovalar" class="btn py-3 mt-4 tnl" data-aos="fade-left">Mobil ilovalar <i class="fa-brands fa-android"></i></a>
+                  <a href="./portfolio/" data="Web-saytlar" class="btn py-3 mt-4 tnl" data-aos="fade-left">Web-saytlar <i class="fa-solid fa-globe"></i></a>
+                  <a href="./portfolio/" data="Brending" class="btn py-3 mt-4 tnl" data-aos="fade-left">Brending <i class="fa-brands fa-pied-piper"></i></a>
+              </div>
+          </div>
+          <div class="row mt-5">
+              <div class="col-xl-6" data-aos="fade-down">
+                  <a href="https://angren-education.uz" class="aHref">
+                      <figure class="snip1543">
+                      <img src="./assets/image/p1.jpg" alt="sample108" />
+                      <figcaption>
+                        <h4 class="p-2">Target</h4>
+                        <p class="p-2 tnl" data="O'quv Markazini avtomatlashtirish uchun tayyorlangan web-sayt va Telegram Bot.">O'quv Markazini avtomatlashtirish uchun tayyorlangan web-sayt va Telegram Bot.</p>
+                      </figcaption>
+                      <!-- <a href="#"></a> -->
+                  </figure>
+                  </a>
+              </div>
+              <div class="col-xl-6">
+                  <div class="row">
+                      <div class="col-md-6" data-aos="fade-up">
+                          <a href="https://t.me/vSaveRoBot" class="aHref">
+                              <figure class="snip1543">
+                              <img src="./assets/image/p2.jpg" alt="sample108" />
+                              <figcaption>
+                                <h4 class="p-2">vSaveRobot</h4>
+                                <p class="p-2 tnl"  data="Ijtimoiy tarmoqlardan multi-medialar yuklab oluvchi Telegram Bot.">Ijtimoiy tarmoqlardan multi-medialar yuklab oluvchi Telegram Bot.</p>
+                              </figcaption>
+                              <!-- <a href="#"></a> -->
+                          </figure>
+                         </a>
+                          <a href="https://www.cosmos-chodak.uz/" class="aHref">
+                              <figure class="snip1543">
+                              <img src="./assets/image/p10.jpg" alt="sample108" />
+                              <figcaption>
+                                <h4 class="p-2">Apart Cosmos Hotel</h4>
+                                <p class="p-2 tnl" data="Cosmos Turizm Maskanini avtomatlashtirish uchun tayyorlangan web-sayt va mobil ilova.">Cosmos Turizm Maskanini avtomatlashtirish uchun tayyorlangan web-sayt va mobil ilova.</p>
+                              </figcaption>
+                              <!-- <a href="#"></a> -->
+                          </figure>
+                          </a>
+                      </div>
+                      <div class="col-md-6" data-aos="fade-down">
+                          <a href="https://t.me/Komakberbot" class="aHref">
+                              <figure class="snip1543">
+                              <img src="./assets/image/p3.jpg" alt="sample108" />
+                              <figcaption>
+                                <h4 class="p-2">KomakBer</h4>
+                                <p class="p-2 tnl" data="Ko'p funksiyali, foydalanuvchilarga manfaatli bo'lgan Telegram Bot">Ko'p funksiyali, foydalanuvchilarga manfaatli bo'lgan Telegram Bot</p>
+                              </figcaption>
+                              <!-- <a href="#"></a> -->
+                          </figure>
+                          </a>
+                          <a href="https://t.me/Appkeybot" class="aHref">
+                              <figure class="snip1543">
+                              <img src="./assets/image/p4.jpg" alt="sample108" />
+                              <figcaption>
+                                <h4 class="p-2">Appkey</h4>
+                                <p class="p-2 tnl" data="Bot ixlosmandlari bu bot orqali oson tarzda mobil ilovlarni yuklab olishlari mumkin.">Bot ixlosmandlari bu bot orqali oson tarzda mobil ilovlarni yuklab olishlari mumkin.</p>
+                              </figcaption>
+                              <!-- <a href="#"></a> -->
+                          </figure>
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row mt-3">
+              <div class="col-xl-3">
+                  <a href="http://u6178.xvest4.ru/madaniy%20meros/index.html" class="aHref">
+                      <figure class="snip1543" data-aos="fade-down-right">
+                      <img src="https://madaniymeros.uz/img/gerb.deafcdd7.png" alt="sample108" />
+                      <figcaption>
+                        <h4 class="p-2">Madaniy Meros Jizzax</h4>
+                        <p class="p-2 tnl">Madaniy Meros Jizzax uchun tayyorlangan web-sayt</p>
+                      </figcaption>
+                      <!-- <a href="#"></a> -->
+                  </figure>
+                  </a>
+                 
+              </div> 
+              <div class="col-xl-6">
+                  <a href="https://t.me/argos_yetakchibot" class="aHref">
+                      <figure class="snip1543" data-aos="zoom-in">
+                      <img src="./assets/image/p12.jpg" alt="sample108" />
+                      <figcaption>
+                        <h4 class="p-2">Argos Yetakchi</h4>
+                        <p class="p-2 tnl" data="Namangan Yoshlar Ittifoqi uchun tayyorlangan Telegram Bot.">Namangan Yoshlar Ittifoqi uchun tayyorlangan Telegram Bot.</p>
+                      </figcaption>
+                      <!-- <a href="#"></a> -->
+                  </figure>
+                  </a>
+              </div>
+              <div class="col-xl-3">
+                  <a href="https://virtualedu.uz" class="aHref">
+                      <figure class="snip1543" data-aos="fade-down-left">
+                      <img src="https://virtualedu.uz/assets/img/logos.png" alt="sample108" />
+                      <figcaption>
+                        <h4 class="p-2">The Royal School</h4>
+                        <p class="p-2 tnl" data="Afsona Restorani uchun tayyorlangan web-sayt va mobil ilova.">The Royal School uchun tayyorlangan web-sayt.</p>
+                      </figcaption>
+                      <!-- <a href="#"></a> -->
+                  </figure>
+                  </a>
+                  <a href="https://imkoniyatlar.uz" class="aHref">
+                      <figure class="snip1543" data-aos="fade-up-left"    >
+                      <img src="https://www.imkoniyatlar.uz/static/media/logo.a160f954718ad748e5ff.png" alt="sample108" />
+                      <figcaption>
+                        <h4 class="p-2">Imkoniyatlar</h4>
+                        <p class="tnl">Imkoniyatlari cheklanganlar uchun web-sayt</p>
+                      </figcaption>
+                      <!-- <a href="#"></a> -->
+                  </figure>
+                  </a>
+              </div>
+          </div>
+          <a data-aos="fade-right" data="Batafsil" href="./portfolio/" class="btn py-3 px-4 mt-4 mb-5 allPortfoliio tnl">Batafsil <i class="fa-solid fa-arrow-up-right"></i></a>
+      </div>
+  </div>
+
+    <div class="service">
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-lg-6 mt-5 mb-5">
+                    <h5 style="color: #2152A1; font-weight: 700;" data="Bizning" class="mt-3 tnl">Bizning</h5>
+                    <h1 data="Xizmatlarimiz" class="text-white tnl" style="font-weight: 800;" data-aos="fade-right">Xizmatlarimiz</h1>
+                </div>
+            </div>
+            <div class="row cardRow">
+                <div class="col-md-6 cardService" data-aos="fade-down-right">
+                    <h2 class="tnl" data="Web-saytlar">Web-saytlar</h2>
+                    <p class="tnl" data="Web-saytlar deb odatda bir-biriga giperhavolalarni o'z ichiga olgan va jismoniy shaxs, kompaniya, ta'lim muassasasi, hukumat yoki tashkilot tomonidan onlayn ravishda taqdim etiladigan World Wide Web sahifalari guruhiga aytiladi. Virtual Group jamoasi ham ko'plab kompaniya va tashkilotlarning web saytlarini yaratib bergan. Afsona restorani, Target o'quv markazi shular jumlasidandir" > Web-saytlar deb odatda bir-biriga giperhavolalarni o'z ichiga olgan va jismoniy shaxs, kompaniya, ta'lim muassasasi, hukumat yoki tashkilot tomonidan onlayn ravishda taqdim etiladigan World Wide Web sahifalari guruhiga aytiladi. Virtual Group jamoasi ham ko'plab kompaniya va tashkilotlarning web saytlarini yaratib bergan. Afsona restorani, Target o'quv markazi shular jumlasidandir. </p>
+                </div>
+                <div class="col-md-6 cardService" data-aos="fade-down-left">
+                    <h2 class="tnl" data="Mobil ilovalar" id="mobil ilova">Mobil ilovalar</h2>
+                    <p class="tnl" data="Mobil ilova - bu telefon, planshet yoki soat kabi mobil qurilmada ishlashga mo'ljallangan kompyuter dasturi yoki dasturiy ta'minot ilovasi hisoblanadi. Virtual Groupda android dasturchilar tomonidan turli xil mobil ilovalar yaratiladi. Apart Cosmos Hotel ilovasi bunga misol bo'la oladi.">Mobil ilova - bu telefon, planshet yoki soat kabi mobil qurilmada ishlashga mo'ljallangan kompyuter dasturi yoki dasturiy ta'minot ilovasi hisoblanadi. Virtual Groupda android dasturchilar tomonidan turli xil mobil ilovalar yaratiladi. Apart Cosmos Hotel ilovasi bunga misol bo'la oladi.</p>
+                </div>
+            </div>
+            <div class="row cardRow" data-aos="fade-right">
+                <div class="col-md-6 cardService">
+                    <h2 class="tnl" data="SMM xizmatlari">SMM Xizmatlari</h2>
+                    <p class="tnl" data="Ijtimoiy media marketingi (SMM) kompaniya brendini yaratish, sotishni ko'paytirish va veb-saytlar trafigini oshirish uchun ijtimoiy tarmoqlardan foydalanish - foydalanuvchilar ijtimoiy tarmoqlarni qurish va ma'lumot almashish platformalari uchun ishlatiladi. Virtual Groupning SMM xizmatlarida qulay usulda foydalanishingiz mumkin.">Ijtimoiy media marketingi (SMM) kompaniya brendini yaratish, sotishni ko'paytirish va veb-saytlar trafigini oshirish uchun ijtimoiy tarmoqlardan foydalanish - foydalanuvchilar ijtimoiy tarmoqlarni qurish va ma'lumot almashish platformalari uchun ishlatiladi. Virtual Groupning SMM xizmatlarida qulay usulda foydalanishingiz mumkin.</p>
+                </div>
+                <div class="col-md-6 cardService" data-aos="fade-left">
+                    <h2 class="tnl" data="UI/UX">UI/UX</h2>
+                    <p class="tnl" data="UI veb-sayt, ilova yoki boshqa elektron qurilmadan foydalanganda siz o'zaro aloqada bo'lgan ekranlar, tugmalar, o'tish tugmalari, piktogrammalar va boshqa vizual elementlarga ishora qiladi. UX deganda mahsulot bilan boʻlgan oʻzaro taʼsiringiz, shu jumladan, oʻzaro taʼsirga qanday munosabatda boʻlishingiz tushuniladi. Virtual Groupda siz UI va UX bo'yich mutaxasisslarni uchratishingiz mumkin.">UI veb-sayt, ilova yoki boshqa elektron qurilmadan foydalanganda siz o'zaro aloqada bo'lgan ekranlar, tugmalar, o'tish tugmalari, piktogrammalar va boshqa vizual elementlarga ishora qiladi. UX deganda mahsulot bilan boʻlgan oʻzaro taʼsiringiz, shu jumladan, oʻzaro taʼsirga qanday munosabatda boʻlishingiz tushuniladi. Virtual Groupda siz UI va UX bo'yich mutaxasisslarni uchratishingiz mumkin.</p>
+                </div>
+            </div>
+            <div class="row cardRow">
+                <div class="col-md-6 cardService" data-aos="fade-up-right">
+                    <h2 class="tnl" data="Telegram bot" id="telegram bot">Telegram Bot</h2>
+                    <p class="tnl" data="Bugungi kunda rivojlanayotgan, ko'p funksiyali tarmoq - Telegram bot ham Virtual Group jamoasida keng rivojlangan. Komakber, Appdata, Benefit Group kabi murakkab telegram botlar aynan Virtual Group tomonidan ishlangan.">Bugungi kunda rivojlanayotgan, ko'p funksiyali tarmoq - Telegram bot ham Virtual Group jamoasida keng rivojlangan. "Komakber", "Appdata", "Benefit Group" kabi murakkab telegram botlar aynan Virtual Group tomonidan ishlangan.</p>
+                </div>
+                <div class="col-md-6 cardService" data-aos="fade-up-left">
+                    <h2 class="tnl" data="Ijtimoiy tarmoqlarni rivojlantirish">Ijtimoiy tarmoqlarni rivojlantirish</h2>
+                    <p class="tnl" data="Biz bilan hamkorlik qilgan holda ijtimoiy auditoriyangiz va mijozlaringiz sonini oshirishingiz mumkin.">Biz bilan hamkorlik qilgan holda ijtimoiy auditoriyangiz va mijozlaringiz sonini oshirishingiz mumkin. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="partners">
+        <div class="container">
+            <div class="row">
+                <h6 data="Hamkorlarimiz" style="color: #2152A1; font-weight: 700;" class="mt-5 ms-4 tnl">Hamkorlarimiz</h6>
+                <h2 class="text-white mt-2 ms-4 mb-5 tnl" data="Bizga ishonadigan kompaniyalar" style="font-weight: 800;" data-aos="fade-right">Bizga ishonadigan kompaniyalar</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-2" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2" data-aos="fade-up"><img class="img-fluid" src="./assets/image/logo1.png" alt=""></div>
+                <div class="col-md-2" data-aos="fade-up"><img class="img-fluid" src="./assets/image/logo2.png" alt=""></div>
+                <div class="col-md-2" data-aos="fade-up"><img class="img-fluid" src="./assets/image/logo3.png" alt=""></div>
+                <div class="col-md-2" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2 mb-5" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2 mb-5" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2 mb-5" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2 mb-5" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+                <div class="col-md-2 mb-5" data-aos="fade-up"><img src="https://uic.group/media/Partners/IT_park.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="joinGroup">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-md-8 py-4">
+                    <h2 class="tnl" data="Bizning jamoa orasida siz ham bo'lishingiz mumkin va bu juda oson!">Bizning jamoa orasida siz ham bo'lishingiz mumkin va bu juda oson!</h2>
+                    <p class="tnl" data="Biz bilan yuksalmoqchimisiz? Unda keling va bizga kerakligingizni isbotlang va ajralmas kuchli jamoaga ega bo'ling!">Biz bilan yuksalmoqchimisiz? Unda keling va bizga kerakligingizni isbotlang va ajralmas kuchli jamoaga ega bo'ling!</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper mySwiper swiper-coverflow swiper-3d swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress">
+          <div class="swiper-wrapper" id="swiper-wrapper-60103a33a34e61b9b" aria-live="polite" style="cursor: grab; transition-duration: 0ms; transform: translate3d(-680px, 0px, 0px);">
+            <div class="swiper-slide" role="group" aria-label="1 / 5" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(100deg) scale(1); z-index: -1;">
+              <img src="./assets/image/backdev.jpg" alt="cardImg">
+              <h5 class="tnl" data="Backend dasturchi">Backend dasturchi</h5>
+              <p class="tnl" data="Backend dasturchiga qo'yiladigan talablar: Ushbu yo'nalish bo'yicha ish tajribasi - 6 oy+ Texnologiyalar: Php(Larare yoki yii2), Python(Django yoki Flask) talab etiladi.">Backend dasturchiga qo'yiladigan talablar: Ushbu yo'nalish bo'yicha ish tajribasi - 6 oy+ Texnologiyalar: Php(Larare yoki yii2), Python(Django yoki Flask) talab etiladi.</p>
+              <a href="#" data="Batafsil" class="btn py-3 px-4 mt-4 tnl">Batafsil</a>
+            <div class="swiper-slide-shadow-left" style="opacity: 2; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+            <div class="swiper-slide swiper-slide-visible swiper-slide-prev" role="group" aria-label="2 / 5" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(50deg) scale(1); z-index: 0;">
+              <img src="./assets/image/frontdev.jpg">
+              <h5 class="tnl" data="Frontend dasturchi">Frontend dasturchi</h5>
+              <p class="tnl" data="Frontend dasturchiga qo'yiladigan talablar: Ushbu yo'nalish bo'yicha ish tajribasi - 5 oy+ Texnologiyalar: Html, Css, Javascript, React talab etiladi (Vue yoki JQueryni  bilish katta plus bo'ladi)">Frontend dasturchiga qo'yiladigan talablar: Ushbu yo'nalish bo'yicha ish tajribasi - 5 oy+ Texnologiyalar: Html, Css, Javascript, React talab etiladi (Vue yoki JQueryni  bilish katta plus bo'ladi)</p>
+              <a href="#" data="Batafsil" class="btn py-3 px-4 mt-4 tnl">Batafsil</a>
+            <div class="swiper-slide-shadow-left" style="opacity: 1; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+            <div class="swiper-slide swiper-slide-visible swiper-slide-active" role="group" aria-label="3 / 5" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1); z-index: 1;">
+              <img src="./assets/image/androiddev.jpg">
+              <h5 class="tnl" data="Android dasturchi">Android dasturchi</h5>
+              <p class="tnl" data="Android dasturchiga qo'yiladigan talablar: Ushbu yo'nalish bo'yicha ish tajribasi - 6 oy+ Texnologiyalar: Intellij Idea, Android Studio (Java yoki Kotlin) talab etiladi.">Android dasturchiga qo'yiladigan talablar: Ushbu yo'nalish bo'yicha ish tajribasi - 6 oy+ Texnologiyalar: Intellij Idea, Android Studio (Java yoki Kotlin) talab etiladi.</p>
+              <a href="#" data="Batafsil" class="btn py-3 px-4 mt-4 tnl">Batafsil</a>
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 0; transition-duration: 0ms;"></div></div>
+            <div class="swiper-slide swiper-slide-visible swiper-slide-next" role="group" aria-label="4 / 5" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -100px) rotateX(0deg) rotateY(-50deg) scale(1); z-index: 0;">
+              <img src="./assets/image/smm.jpg">
+              <h5 data="Marketolog" class="tnl">Marketolog</h5>
+              <p class="tnl" data="Backend dasturchiga qo'yiladigan talablar: Ushbu yo'nalish bo'yicha ish tajribasi - 3 oy+ Texnologiyalar: Php(Laravel), Python(Django)">Backend dasturchiga qo'yiladigan talablar: Ushbu yo'nalish bo'yicha ish tajribasi - 3 oy+ Texnologiyalar: Php(Laravel), Python(Django)</p>
+              <a href="#" data="Batafsil" class="btn py-3 px-4 mt-4 tnl">Batafsil</a>
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 1; transition-duration: 0ms;"></div></div>
+            <div class="swiper-slide" role="group" aria-label="5 / 5" style="transition-duration: 0ms; transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(-100deg) scale(1); z-index: -1;">
+              <img src="./assets/image/uxui.jpg">
+              <h5 class="tnl" data="UI/UX">UI/UX</h5>
+              <p class="tnl" data="UI/UX dizayneriga qo'yiladigan talablar: Ushbu yo'nalish bo'yicha ish tajribasi - 5 oy+ Texnologiyalar: Adobe XD, Figma talab etiladi.">UI/UX dizayneriga qo'yiladigan talablar: Ushbu yo'nalish bo'yicha ish tajribasi - 5 oy+ Texnologiyalar: Adobe XD, Figma talab etiladi.</p>
+              <a href="#" data="Batafsil" class="btn py-3 px-4 mt-4 tnl">Batafsil</a>
+            <div class="swiper-slide-shadow-left" style="opacity: 0; transition-duration: 0ms;"></div><div class="swiper-slide-shadow-right" style="opacity: 2; transition-duration: 0ms;"></div></div>
+          </div>
+          <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+    </div>
+
+    <div class="client">
+        <div class="container">
+          <div class="row">
+            <!-- <h6 style="color: #2152A1; font-weight: 700;" class="mt-5 ms-4">Hamkorlarimiz</h6> -->
+            <h2 data="Mijozlarimiz fikri" class="text-white mt-2 ms-4 mb-5 mt-5 tnl" style="font-weight: 800;" data-aos="fade-right">Mijozlarimiz fikri</h2>
+        </div>
+        </div>
+        <div class="swiper mySwiper2 container mt-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="row mt-4 mb-5">
+                <div class="col-md-8 py-4">
+                    <h2  class="tnl" data="Bizning jamoa orasida siz ham bo'lishingiz mumkin va bu juda oson!">Bizning jamoa orasida siz ham bo'lishingiz mumkin va bu juda oson!</h2>
+                    <p data="Biz bilan yuksalmoqchimisiz? Unda keling va bizga kerakligingizni isoblang va ajralmas kuchli jamoaga ega bo'ling!" class="tnl">Biz bilan yuksalmoqchimisiz? Unda keling va bizga kerakligingizni isbotlang va ajralmas kuchli jamoaga ega bo'ling!</p>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row mt-4">
+                <div class="col-md-8 py-4">
+                    <h2  class="tnl" data="Bizning jamoa orasida siz ham bo'lishingiz mumkin va bu juda oson!">Bizning jamoa orasida siz ham bo'lishingiz mumkin va bu juda oson!</h2>
+                    <p data="Biz bilan yuksalmoqchimisiz? Unda keling va bizga kerakligingizni isoblang va ajralmas kuchli jamoaga ega bo'ling!" class="tnl">Biz bilan yuksalmoqchimisiz? Unda keling va bizga kerakligingizni isbotlang va ajralmas kuchli jamoaga ega bo'ling!</p>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row mt-4">
+                <div class="col-md-8 py-4">
+                  <h2  class="tnl" data="Bizning jamoa orasida siz ham bo'lishingiz mumkin va bu juda oson!">Bizning jamoa orasida siz ham bo'lishingiz mumkin va bu juda oson!</h2>
+                  <p data="Biz bilan yuksalmoqchimisiz? Unda keling va bizga kerakligingizni isoblang va ajralmas kuchli jamoaga ega bo'ling!" class="tnl">Biz bilan yuksalmoqchimisiz? Unda keling va bizga kerakligingizni isbotlang va ajralmas kuchli jamoaga ega bo'ling!</p>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="row mt-4">
+                <div class="col-md-8 py-4">
+                  <h2  class="tnl" data="Bizning jamoa orasida siz ham bo'lishingiz mumkin va bu juda oson!">Bizning jamoa orasida siz ham bo'lishingiz mumkin va bu juda oson!</h2>
+                  <p data="Biz bilan yuksalmoqchimisiz? Unda keling va bizga kerakligingizni isbotlang va ajralmas kuchli jamoaga ega bo'ling!" class="tnl">Biz bilan yuksalmoqchimisiz? Unda keling va bizga kerakligingizni isbotlang va ajralmas kuchli jamoaga ega bo'ling!</p>
+                </div>
+            </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+<footer class="text-center text-lg-start text-muted">
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4 border-black"
+    >
+      <div class="me-5 d-none d-lg-block">
+        <span class="tnl" data="Ijtimoiy tarmoqlarda biz bilan bog'laning:">Ijtimoiy tarmoqlarda biz bilan bog'laning:</span>
+      </div>
+      <div>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+
+        <div class="row mt-3">
+
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Virtual Group
+            </h6>
+            <p class="tnl" data="Biz biznes egalariga dasturiy mahsulotlarni yetkazishga yordam beramiz. Virtual Group bu - murakkab muammolarga zamonaviy yechim.">Biz biznes egalariga dasturiy mahsulotlarni yetkazishga yordam beramiz. Virtual Group bu - murakkab muammolarga zamonaviy yechim.
+            </p>
+          </div>
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 data="Mahsulotlar" class="text-uppercase fw-bold mb-4 tnl">
+              Mahsulotlar
+            </h6>
+            <p>
+              <a href="#!" data="Web-saytlar" class="text-reset tnl" id="veb-sayt">Veb-saytlar</a>
+            </p>
+            <p>
+              <a href="#!" data="Mobil ilovalar" class="text-reset tnl">Mobil ilovalar</a>
+            </p>
+            <p>
+              <a href="#!" data="Telegram bot" class="text-reset tnl">Telegram Bot</a>
+            </p>
+            <p>
+              <a href="#!" data="UI/UX" class="text-reset tnl" id="ui ux">UI/UX</a>
+            </p>
+          </div>
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 data="Foydali linklar" class="text-uppercase fw-bold mb-4 tnl" >
+              Foydali linklar
+            </h6>
+            <p>
+              <a href="#!"  data="Narxlash" class="text-reset tnl">Narxlash</a>
+            </p>
+            <p>
+              <a href="#!"  data="Ta'mirlash" class="text-reset tnl">Ta'mirlash</a>
+            </p>
+            <p>
+              <a href="#!" data="Buyurtma" class="text-reset tnl">Buyurtma</a>
+            </p>
+            <p>
+              <a href="#!" data="Yordam" class="text-reset tnl">Yordam</a>
+            </p>
+          </div>
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 data="Kontakt" class="text-uppercase fw-bold mb-4 tnl">
+              Kontakt
+            </h6>
+            <p><i class="fas fa-home me-3"></i> Namangan, Pop, Obod ko'chasi</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+              admin@virtualgroup.uz
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 998 94 054 51 97</p>
+            <p><i class="fas fa-print me-3"></i> + 998 94 404 51 97</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2022 Copyright:
+      <a class="text-reset fw-bold" href="#">Virtual Group</a>
+    </div>
+    
+
+  </footer>
+
+<script src="./assets/app/translate.js"></script>
+<!-- JQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+<!-- MD Bootstrap JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.2.0/mdb.min.js"></script>
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- Main JS -->
+<script src="./assets/app/main.js"></script>
+<!-- <script src="//code.jivosite.com/widget/ZNlijARxB0" async></script> -->
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
